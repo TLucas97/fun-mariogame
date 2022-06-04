@@ -10,7 +10,6 @@ function addRunningClass() {
         mariorun.classList.remove('mario-jump-animation')
         mariorun.src = 'assets/mariorunning2.gif'
         counterNumber.innerHTML = counter++
-        mariorun.style.animation = 'mario-running-animation 1s steps(4) infinite'
     }, 1200)
 }
 document.addEventListener('keydown', addRunningClass)
