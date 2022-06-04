@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <title>Mario game</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="side1">
+                <a href="/">
+                    <button class="rounded-button">Reiniciar</button>
+                </a>
+            </div>
+            <div class="middle-box">
+                <div class="score-side">
+                    <p>Score <span id="counter-number">0</span></p>
+                </div>
+                <div id="element1">
+                    <img
+                        src="/assets/mariorunning2.gif"
+                        width="110"
+                        id="mario-running"
+                        class="mario-positioning"
+                    />
+                </div>
+                <div id="element2">
+                    <img
+                        src="/assets/marioenemy.gif"
+                        width="120"
+                        id="enemy-running"
+                        class="enemy-positioning enemy-walking-animation"
+                    />
+                </div>
+                <hr class="hr-ground" />
+                .
+            </div>
+            <div class="side2">
+                <button class="rounded-button" onclick="addRunningClass()">Pular</button>
+            </div>
+        </div>
+        <div class="failed-wrapper">
+            <h1>Parece que não foi dessa vez</h1>
+            <a href="/">
+                <button id="restart-button" class="restart-button">Reiniciar</button>
+            </a>
+        </div>
+    </body>
+</html>
