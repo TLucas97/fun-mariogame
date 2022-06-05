@@ -148,16 +148,16 @@ a{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-180px);
+        transform: translateY(-160px) rotate(360deg);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(360deg);
     }
 }
 
 /* enemy walking animation */
 .enemy-walking-animation {
-    animation: enemy-walk 2.5s linear infinite;
+    animation: enemy-walk 1.8s linear infinite;
 }
 
 @keyframes enemy-walk {
@@ -170,3 +170,10 @@ a{
 }
 
 /* infinite enemy coming animation */
+
+/* /* rotate animation */
+
+.enemy-rotate-animation {
+    animation: enemy-rotate 2s linear infinite;
+}
+
