@@ -1,5 +1,20 @@
+const startGame = () => {
+    const startButton = document.getElementById('start-button')
+    const jumpButton = document.getElementById('jump-button')
+    const mariorun = document.getElementById('mario-running')
+    const enemy = document.getElementById('enemy-running')
+    const title = document.querySelector('.gamename')
+
+    mariorun.src = 'assets/mariorunning2.gif'
+    enemy.classList.add('enemy-walking-animation')
+    startButton.innerHTML = 'Reiniciar'
+    startButton.style.display = 'block'
+    jumpButton.style.display = 'block'
+    title.style.display = 'none'
+}
+
 var counter = 1
-function addRunningClass() {
+const addRunningClass = () => {
     var counterNumber = document.getElementById('counter-number')
     const mariorun = document.getElementById('mario-running')
     if (mariorun.classList !== 'mario-jump-animation') {
@@ -12,7 +27,7 @@ function addRunningClass() {
         counterNumber.innerHTML = counter++
     }, 1200)
 }
-document.addEventListener('keydown', addRunningClass)
+// document.addEventListener('keydown', addRunningClass)
 
 const checkDead = setInterval(() => {
     const wrapper = document.querySelector('.wrapper')
